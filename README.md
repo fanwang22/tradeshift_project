@@ -1,6 +1,7 @@
 # tradeshift
 Description:
-I created the project using Python Flask. The server code will be running on http://127.0.0.1:5000
+
+Created the project using Python Flask. The server code will be running on http://127.0.0.1:5000
 Each tree node has an id which is used to be referenced in the APIs. More details about the tree node structure can be found in src/tree_node.py
 When the web server starts, a tree strucutre will be created, like this:
          root
