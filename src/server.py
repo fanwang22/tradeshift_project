@@ -4,7 +4,6 @@ import tree_functions
 from tree import *
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
 
 # create the tree document and keep it around for the app
 tree = Tree()
@@ -61,7 +60,6 @@ def change_parent():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    print(e)
     return jsonify(error=str(e)), 404
 
 app.run()

@@ -44,4 +44,5 @@ def change_parent(root, node_id, parent_id):
     node.height = parent.height + 1
     node.root = parent.root
     get_descendant(node)
+
     return root
