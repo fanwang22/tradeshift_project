@@ -7,41 +7,47 @@ class TreeNode():
         self.root = root
         self.height = height
 
-    @property
-    def id(self):
-        return self.__id
+    def get_id(self):
+        return self._id
 
-    @id.setter
-    def id(self, id):
+    def set_id(self, id):
         # chek id
-        self.__id = id
+        self._id = id
 
-    @property
-    def value(self):
-        return self.__value
+    def get_value(self):
+        return self._value
 
-    @value.setter
-    def value(self, value):
-        self.__value = value
-
+    def set_value(self, value):
+        self._value = value
 
     def get_parent(self):
-        return self.parent
+        return self._parent
+
+    def set_parent(self, parent):
+        self._parent = parent
 
     def get_children(self):
-        return self.children
-
-    def get_root(self):
-        return self.root
-
-    def get_height(self):
-        return self.height
-
-    def set_paren(self, parent):
-        self.parent = parent
+        return self._children
 
     def set_children(self, children):
-        self.children = children
+        self._children = children
+
+    def get_root(self):
+        return self._root
 
     def set_root(self, root):
-        self.root = root
+        self._root = root
+
+    def get_height(self):
+        return self._height
+
+    def set_height(self, height):
+        self._height = height
+
+    id = property(get_id, set_id)
+    value = property(get_value, set_value)
+    parent = property(get_parent, set_parent)
+    children = property(get_children, set_children)
+    root = property(get_root, set_root)
+    height = property(get_height, set_height)
+

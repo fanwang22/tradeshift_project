@@ -6,6 +6,7 @@ from tree import *
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
 
+# create the tree document and keep it around for the app
 tree = Tree()
 
 @app.route('/', methods=['GET'])

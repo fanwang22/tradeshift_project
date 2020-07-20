@@ -5,7 +5,6 @@ class Tree():
         self.root = TreeNode('1', 'root', None, [], None, 0)
         self.tree_map = dict()
 
-    #def construct_tree(self):
         # create tree structure
         self.root.set_root(self.root)
         a = TreeNode('2', 'a', self.root, [], self.root, 1)
