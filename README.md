@@ -23,7 +23,7 @@ A hashmap (dictionary in python) is built as well for quick search, more details
 
 ## To use APIs:
 - Get all descendant nodes of a given node
-    Use the endpoint with the node id: http://127.0.0.1:5000/api/get_descendants?id=3. 
+    Use the endpoint with the node id: http://127.0.0.1:5000/api/get_descendants?id=3  <br /> 
     it will return all its descendants
 
 - Change the parent node of a given node
